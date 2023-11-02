@@ -1,5 +1,8 @@
+// Aaron Prince Anu
+
 public class LacsapsTriangle {
     public static void main(String[] args) {
+
         int n = In.getInt();
 
         if (n < 1) {
@@ -21,12 +24,12 @@ public class LacsapsTriangle {
                 }
             }
         }
-
         System.out.println("Lacsap's Triangle with " + n + " rows:");
         printEquilateralLacsapsTriangle(triangle);
     }
 
     public static void printEquilateralLacsapsTriangle(int[][] triangle) {
+
         int maxWidth = triangle[triangle.length - 1].length * 2 - 1;
 
         for (int i = 0; i < triangle.length; i++) {
@@ -43,7 +46,6 @@ public class LacsapsTriangle {
                     System.out.print("   "); // Adjust the space between numbers for alignment
                 }
             }
-
             System.out.println();
         }
     }
