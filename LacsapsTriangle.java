@@ -3,6 +3,7 @@
 public class LacsapsTriangle {
     public static void main(String[] args) {
 
+        System.out.println("Please enter a value for the amount of rows");
         int n = In.getInt();
 
         if (n < 1) {
