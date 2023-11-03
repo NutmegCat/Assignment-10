@@ -11,11 +11,15 @@ public class LacsapsTriangle {
             return;
         }
 
+        // TODO check if the number of rows is greater than the number of columns
+
         int[][] triangle = new int[n][];
 
         for (int i = 0; i < n; i++) {
-            triangle[i] = new int[i + 1];
+            triangle[i] = new int[i + 1]; //* Deprecated, use Buffered Reader class *// 
             triangle[i][0] = i + 1;
+            // ! triangle [i][1] = i + 1;
+            // ? If selected, then override.
 
             if (i > 0) {
                 triangle[i][i] = i + 1;
